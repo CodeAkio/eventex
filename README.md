@@ -2,6 +2,9 @@
 
 Sistema de Eventos encomendado pela Morena.
 
+[![Build Status](https://travis-ci.org/CodeAkio/eventex.svg?branch=master)](https://travis-ci.org/CodeAkio/eventex)
+[![Maintainability](https://api.codeclimate.com/v1/badges/702d683ae2243ffc329a/maintainability)](https://codeclimate.com/github/CodeAkio/eventex/maintainability)
+
 ## Como desenvolver?
 
 1. Clone o repositório;
