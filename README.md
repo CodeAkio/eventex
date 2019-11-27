@@ -19,7 +19,7 @@ git clone https://github.com/CodeAkio/eventex.git eventex
 cd eventex
 python -m venv .eventex
 source .eventex/bin/activate
-pip install -r requirements.txt
+pip install -r requirements-dev.txt
 cp contrib/env-sample .env
 python manage.py test
 ```
