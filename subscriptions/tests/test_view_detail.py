@@ -1,3 +1,4 @@
+from django.shortcuts import resolve_url
 from django.test import TestCase
 
 from subscriptions.models import Subscription
@@ -12,7 +13,7 @@ class SubscriptionDetailGet(TestCase):
             phone='(21) 2222-3333',
         )
 
-        self.response = self.client.get(f'/inscricao/{self.obj.hashid}/')
+        self.response = self.client.get(resolve_url('subscriptions:detail', self.obj.hashid))
 
     def test_get(self):
         self.assertEqual(200, self.response.status_code)
@@ -34,5 +35,5 @@ class SubscriptionDetailGet(TestCase):
 
 class SubscriptionDetailNotFound(TestCase):
     def test_not_found(self):
-        response = self.client.get('/inscricao/86a04bab-a8be-4d49-8c0e-11ae0c11daf9/')
+        response = self.client.get(resolve_url('subscriptions:detail', '86a04bab-a8be-4d49-8c0e-11ae0c11daf9'))
         self.assertEqual(404, response.status_code)
