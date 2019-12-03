@@ -7,7 +7,7 @@ from subscriptions.admin import SubscriptionModelAdmin, Subscription, admin
 
 class SubscriptionModelAdminTest(TestCase):
     def setUp(self) -> None:
-        Subscription.objects.create(name='Victor', cpf='111.222.333-44', email='victor@email.com', phone='21-2222-3333')
+        Subscription.objects.create(name='Victor', cpf='11122233344', email='victor@email.com', phone='21-2222-3333')
 
         self.model_admin = SubscriptionModelAdmin(Subscription, admin.sites)
 
