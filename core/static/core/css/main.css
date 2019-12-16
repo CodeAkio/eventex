@@ -359,9 +359,19 @@ section header h2 {
     padding: 7px 0 7px;
 }
 
-.alert.success{
+.alert.success {
     color: #3c763d;
     background-color: #dff0d8;
     border-color: #d0e9c6;
 }
+
+.speakers h2 {
+    text-transform: capitalize;
+}
+
+.speakers img {
+    width: 200px;
+    border-radius: 100%;
+}
+
 /* Fim Customização */
